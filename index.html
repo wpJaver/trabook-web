@@ -28,7 +28,7 @@
     />
     <title>Trabook</title>
   </head>
-  <body>
+  <body style="background-color: #fefbfb">
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -44,24 +44,26 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <!-- Logo -->
-          <img class="navbar-brand" href="#" src="recursos/Logo.png" />
+          <img class="navbar-brand" href="#home" src="recursos/Logo.png" />
           <!-- Menu -->
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav me-auto mx-auto mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Destination</a>
+                <a class="nav-link" href="#destination">Destination</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Tour</a>
+                <a class="nav-link" href="#tour">Tour</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="#blog">Blog</a>
               </li>
             </ul>
             <!-- Botones login -->
@@ -73,7 +75,7 @@
     </header>
     <main>
       <!-- ***** Banner principal ***** -->
-      <section>
+      <section style="padding-bottom: 5%" id="home">
         <div class="container">
           <div class="row">
             <div class="col">
@@ -93,7 +95,57 @@
               <img src="recursos/img banner 2.png" alt="" />
             </div>
           </div>
-          <p>AQUI VA UN MENU</p>
+        </div>
+        <!-- AQUI VA UN MENU -->
+        <div class="container justify-content-center text-center">
+          <div class="row">
+            <div class="col" align="center">
+              <div class="banner-menu">
+                <div>
+                  <h5 class="dropdown">
+                    <a
+                      class="dropdown-toggle banner-drop"
+                      id="location"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      >Location</a
+                    >
+                  </h5>
+                  <p>Where are you going</p>
+                </div>
+                <div>
+                  <h5 class="dropdown">
+                    <a
+                      class="dropdown-toggle banner-drop"
+                      id="location"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      >Date</a
+                    >
+                  </h5>
+                  <p>When you will go</p>
+                </div>
+                <div>
+                  <h5 class="dropdown">
+                    <a
+                      class="dropdown-toggle banner-drop"
+                      id="location"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      >Guest</a
+                    >
+                  </h5>
+                  <p>Number of guest</p>
+                </div>
+                <div>
+                  <button class="btn" id="boton-header">Explore Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- ***** Things you need ***** -->
@@ -165,7 +217,11 @@
         </div>
       </section>
       <!-- ***** Deals ***** -->
-      <section class="container justify-content-center text-center">
+      <section
+        class="container justify-content-center text-center"
+        id="about"
+        style="padding: 5%"
+      >
         <!-- Titulo -->
         <div class="row">
           <h1 class="col" id="titulo">
@@ -398,7 +454,11 @@
       </section>
       <!-- ***** Fin Deals ***** -->
       <!-- ***** Vacation ***** -->
-      <section class="container justify-content-center text-center">
+      <section
+        class="container justify-content-center text-center"
+        id="destination"
+        style="padding: 5%"
+      >
         <!-- Titulo -->
 
         <div class="row">
@@ -609,7 +669,7 @@
       </section>
       <!-- ***** Fin Vacation ***** -->
       <!-- ***** Abouts us ***** -->
-      <section class="container">
+      <section class="container" id="tour" style="padding: 5%">
         <div class="row">
           <!-- TITULO -->
           <div class="col">
@@ -622,14 +682,24 @@
             </p>
           </div>
           <!-- CARROUSEL -->
-          <div class="col"></div>
+          <div class="col">
+            <img src="recursos/about-us-img.png" alt="" />
+          </div>
         </div>
       </section>
       <!-- ***** Fin Abouts us ***** -->
       <!-- ***** Get update ***** -->
-      <section class="container justify-content-center text-center">
+      <section
+        class="container justify-content-center text-center"
+        style="padding: 5%"
+        id="blog"
+      >
         <!-- Titulo -->
-        <h1 class="row titulo">Get update with latest blog</h1>
+        <div class="row">
+          <h1 class="titulo">
+            Get update with <span class="color-naranja"> latest blog</span>
+          </h1>
+        </div>
         <!-- Card -->
         <div class="row">
           <div
@@ -637,272 +707,366 @@
             class="carousel carousel-dark slide"
             data-bs-ride="false"
           >
-            <div class="carousel-indicators">
+            <div class="carousel-inner" style="margin-bottom: 2%">
+              <div class="carousel-item">
+                <div class="card-group" style="gap: 1%">
+                  <div class="card">
+                    <img
+                      src="recursos/amazing-diference-year.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="col get-update-card-title">
+                            The Amazing Difference a Year of Travelling .
+                          </p>
+                        </div>
+                        <div class="row">
+                          <p class="col get-update-card-body">July 27, 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/travel-for-enough.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="col get-update-card-title">
+                            Travel far enough, you meet yourself.
+                          </p>
+                        </div>
+                        <div class="row">
+                          <p class="col get-update-card-body">July 27, 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/save-money-while.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="col get-update-card-title">
+                            How to Save Money While Visiting Africa .
+                          </p>
+                        </div>
+                        <div class="row">
+                          <p class="col get-update-card-body">July 27, 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/reflection-5-months.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="col get-update-card-title">
+                            Reflections on 5 Months of Travel: Time to Hang
+                          </p>
+                        </div>
+                        <div class="row">
+                          <p class="col get-update-card-body">July 27, 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- OTRO CARROUSEL CARD  -->
+              <div class="carousel-item active">
+                <div class="card-group" style="gap: 1%">
+                  <div class="card">
+                    <img
+                      src="recursos/amazing-diference-year.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="col get-update-card-title">
+                            The Amazing Difference a Year of Travelling .
+                          </p>
+                        </div>
+                        <div class="row">
+                          <p class="col get-update-card-body">July 27, 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/travel-for-enough.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="col get-update-card-title">
+                            Travel far enough, you meet yourself.
+                          </p>
+                        </div>
+                        <div class="row">
+                          <p class="col get-update-card-body">July 27, 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/save-money-while.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="col get-update-card-title">
+                            How to Save Money While Visiting Africa .
+                          </p>
+                        </div>
+                        <div class="row">
+                          <p class="col get-update-card-body">July 27, 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/reflection-5-months.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="col get-update-card-title">
+                            Reflections on 5 Months of Travel: Time to Hang
+                          </p>
+                        </div>
+                        <div class="row">
+                          <p class="col get-update-card-body">July 27, 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- OTRO CARROUSEL CARD  -->
+              <div class="carousel-item">
+                <div class="card-group" style="gap: 1%">
+                  <div class="card">
+                    <img
+                      src="recursos/amazing-diference-year.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="col get-update-card-title">
+                            The Amazing Difference a Year of Travelling .
+                          </p>
+                        </div>
+                        <div class="row">
+                          <p class="col get-update-card-body">July 27, 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/travel-for-enough.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="col get-update-card-title">
+                            Travel far enough, you meet yourself.
+                          </p>
+                        </div>
+                        <div class="row">
+                          <p class="col get-update-card-body">July 27, 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/save-money-while.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="col get-update-card-title">
+                            How to Save Money While Visiting Africa .
+                          </p>
+                        </div>
+                        <div class="row">
+                          <p class="col get-update-card-body">July 27, 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/reflection-5-months.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="col get-update-card-title">
+                            Reflections on 5 Months of Travel: Time to Hang
+                          </p>
+                        </div>
+                        <div class="row">
+                          <p class="col get-update-card-body">July 27, 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="carousel-indicators"
+              id="get-update-carousel-indicators"
+            >
               <button
                 type="button"
                 data-bs-target="#carouselExampleCaptions3"
                 data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
                 aria-label="Slide 1"
               ></button>
               <button
                 type="button"
                 data-bs-target="#carouselExampleCaptions3"
+                class="active"
+                aria-current="true"
                 data-bs-slide-to="1"
                 aria-label="Slide 2"
               ></button>
-            </div>
-            <div class="carousel-inner" style="margin-bottom: 2%">
-              <div class="carousel-item active">
-                <div class="card-group" style="gap: 1%">
-                  <div class="card">
-                    <img
-                      src="recursos/amazing-diference-year.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <div class="container">
-                        <div class="row">
-                          <p class="col get-update-card-title">
-                            The Amazing Difference a Year of Travelling .
-                          </p>
-                        </div>
-                        <div class="row">
-                          <p class="col get-update-card-body">July 27, 2021</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img
-                      src="recursos/travel-for-enough.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <div class="container">
-                        <div class="row">
-                          <p class="col get-update-card-title">
-                            Travel far enough, you meet yourself.
-                          </p>
-                        </div>
-                        <div class="row">
-                          <p class="col get-update-card-body">July 27, 2021</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img
-                      src="recursos/save-money-while.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <div class="container">
-                        <div class="row">
-                          <p class="col get-update-card-title">
-                            How to Save Money While Visiting Africa .
-                          </p>
-                        </div>
-                        <div class="row">
-                          <p class="col get-update-card-body">July 27, 2021</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img
-                      src="recursos/reflection-5-months.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <div class="container">
-                        <div class="row">
-                          <p class="col get-update-card-title">
-                            Reflections on 5 Months of Travel: Time to Hang
-                          </p>
-                        </div>
-                        <div class="row">
-                          <p class="col get-update-card-body">July 27, 2021</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- OTRO CARROUSEL CARD  -->
-              <div class="carousel-item active">
-                <div class="card-group" style="gap: 1%">
-                  <div class="card">
-                    <img
-                      src="recursos/amazing-diference-year.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <div class="container">
-                        <div class="row">
-                          <p class="col get-update-card-title">
-                            The Amazing Difference a Year of Travelling .
-                          </p>
-                        </div>
-                        <div class="row">
-                          <p class="col get-update-card-body">July 27, 2021</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img
-                      src="recursos/travel-for-enough.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <div class="container">
-                        <div class="row">
-                          <p class="col get-update-card-title">
-                            Travel far enough, you meet yourself.
-                          </p>
-                        </div>
-                        <div class="row">
-                          <p class="col get-update-card-body">July 27, 2021</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img
-                      src="recursos/save-money-while.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <div class="container">
-                        <div class="row">
-                          <p class="col get-update-card-title">
-                            How to Save Money While Visiting Africa .
-                          </p>
-                        </div>
-                        <div class="row">
-                          <p class="col get-update-card-body">July 27, 2021</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img
-                      src="recursos/reflection-5-months.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <div class="container">
-                        <div class="row">
-                          <p class="col get-update-card-title">
-                            Reflections on 5 Months of Travel: Time to Hang
-                          </p>
-                        </div>
-                        <div class="row">
-                          <p class="col get-update-card-body">July 27, 2021</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- OTRO CARROUSEL CARD  -->
-              <div class="carousel-item active">
-                <div class="card-group" style="gap: 1%">
-                  <div class="card">
-                    <img
-                      src="recursos/amazing-diference-year.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <div class="container">
-                        <div class="row">
-                          <p class="col get-update-card-title">
-                            The Amazing Difference a Year of Travelling .
-                          </p>
-                        </div>
-                        <div class="row">
-                          <p class="col get-update-card-body">July 27, 2021</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img
-                      src="recursos/travel-for-enough.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <div class="container">
-                        <div class="row">
-                          <p class="col get-update-card-title">
-                            Travel far enough, you meet yourself.
-                          </p>
-                        </div>
-                        <div class="row">
-                          <p class="col get-update-card-body">July 27, 2021</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img
-                      src="recursos/save-money-while.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <div class="container">
-                        <div class="row">
-                          <p class="col get-update-card-title">
-                            How to Save Money While Visiting Africa .
-                          </p>
-                        </div>
-                        <div class="row">
-                          <p class="col get-update-card-body">July 27, 2021</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img
-                      src="recursos/reflection-5-months.png"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <div class="container">
-                        <div class="row">
-                          <p class="col get-update-card-title">
-                            Reflections on 5 Months of Travel: Time to Hang
-                          </p>
-                        </div>
-                        <div class="row">
-                          <p class="col get-update-card-body">July 27, 2021</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions3"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
             </div>
           </div>
         </div>
       </section>
       <!-- ***** Fin Get update ***** -->
+      <!-- ***** Suscribete ***** -->
+      <section
+        style="
+          background: rgb(247, 248, 252);
+          background: linear-gradient(
+            0deg,
+            rgba(247, 248, 252, 1) 50%,
+            rgba(255, 255, 255, 1) 100%
+          );
+          padding: 2%;
+        "
+        id="suscribete"
+      >
+        <div
+          class="container justify-content-center text-center"
+          id="suscribete"
+        >
+          <div class="row" style="flex-direction: column; align-items: center">
+            <h1 class="col suscribete-titulo">
+              Subscribe and get exclusive <br />
+              deals & offer
+            </h1>
+
+            <div class="col" align="center">
+              <div class="input-group mb-3" id="suscribete-fondo-input">
+                <img
+                  src="recursos/email-logo.png"
+                  alt=""
+                  style="width: 5%; height: 5%"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="suscribete-input"
+                  placeholder="Enter your mail"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+                <button class="btn" id="suscribete-boton">subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ***** Fin Suscribete ***** -->
     </main>
-    <footer></footer>
+    <footer style="background: #f7f8fc">
+      <div class="container">
+        <div class="row">
+          <div class="col-3 align-self-lg-start">
+            <img
+              src="recursos/Logo.png"
+              alt="logo-footer"
+              style="padding-bottom: 5%"
+            />
+
+            <p>Book your trip in minute, get full Control for much longer.</p>
+            <div>
+              <img src="recursos/Social-1.png" alt="facebook" />
+              <img src="recursos/Social-2.png" alt="Instagram" />
+              <img src="recursos/Social.png" alt="twiter" />
+            </div>
+          </div>
+          <div class="col-3"></div>
+
+          <div class="col align-self-end">
+            <h5>Company</h5>
+            <p><a>About</a></p>
+            <p><a>Careers</a></p>
+            <p><a>Logistic</a></p>
+            <p><a>Privacy & Policy</a></p>
+          </div>
+          <div class="col">
+            <h5>Contact</h5>
+            <p>Help/FAQ</p>
+            <p>Press</p>
+            <p>Afiliates</p>
+          </div>
+          <div class="col">
+            <h5>More</h5>
+            <p>Press Centre</p>
+            <p>Our Blog</p>
+            <p>Low fare tips</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- ***** JS Botstrap ***** -->
     <script
