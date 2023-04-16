@@ -10,6 +10,14 @@
       href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- ***** importando bootstrap ***** -->
     <link
@@ -18,7 +26,7 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <title>Trabook</title>
   </head>
   <body>
     <header>
@@ -89,7 +97,810 @@
         </div>
       </section>
       <!-- ***** Things you need ***** -->
-      <section></section>
+      <section class="things">
+        <div
+          class="container justify-content-center text-center"
+          id="things-items"
+        >
+          <div class="row">
+            <!-- Titulo -->
+            <h1 class="titulo">
+              Things you need <span class="color-naranja"> to do </span>
+            </h1>
+          </div>
+          <div class="row">
+            <!-- Cuerpo -->
+            <p>
+              We ensure that you’ll embark on a perfectly planned,<br />
+              safe vacation at a price you can afford.
+            </p>
+          </div>
+          <div class="row">
+            <!-- Cards -->
+            <div class="card-group gap-5" id="things-cards">
+              <div class="card text-start" id="things-card">
+                <div class="card-body">
+                  <div class="card-img">
+                    <img src="recursos/thing-1.png" alt="" />
+                  </div>
+                  <div class="card-title" id="things-card-title">Sign Up</div>
+                  <div class="card-text">
+                    Sign Up Completes all the work associated with planning and
+                    processing
+                  </div>
+                </div>
+              </div>
+              <!-- / -->
+              <div class="card text-start" id="things-card">
+                <div class="card-body">
+                  <div class="card-img">
+                    <img src="recursos/thing-2.png" alt="" />
+                  </div>
+                  <div class="card-title" id="things-card-title">
+                    Worth of Money
+                  </div>
+                  <div class="card-text">
+                    After successful access then book from exclusive deals &
+                    pricing
+                  </div>
+                </div>
+              </div>
+              <!-- / -->
+              <div class="card text-start" id="things-card">
+                <div class="card-body">
+                  <div class="card-img">
+                    <img src="recursos/thing-3.png" alt="" />
+                  </div>
+                  <div class="card-title" id="things-card-title">
+                    Exciting Travel
+                  </div>
+                  <div class="card-text">
+                    Start and explore a wide range of exciting travel
+                    experience.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ***** Deals ***** -->
+      <section class="container justify-content-center text-center">
+        <!-- Titulo -->
+        <div class="row">
+          <h1 class="col" id="titulo">
+            Exclusive <span class="color-naranja">deals & discounts</span>
+          </h1>
+        </div>
+        <!-- Cuerpo -->
+        <div class="row">
+          <p class="col">
+            Discover our fantastic early booking discounts<br />
+            & start planning your journey.
+          </p>
+        </div>
+        <!-- Carrousel -->
+        <div class="row">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel carousel-dark slide"
+            data-bs-ride="false"
+          >
+            <div class="carousel-indicators" style="display: none">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+            </div>
+            <div class="carousel-inner" style="margin-bottom: 2%">
+              <div class="carousel-item active">
+                <div class="card-group" style="gap: 1%">
+                  <div class="card">
+                    <img
+                      src="recursos/Madrid.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <h5 class="col" id="deals-card-title">Madrid</h5>
+                          <p class="col" id="deals-card-star">4.8</p>
+                        </div>
+                        <div class="row">
+                          <p class="col" id="deals-card-location">Spain</p>
+                          <p class="col" id="deals-card-old-price">$950</p>
+                          <p class="col" id="deals-card-new-price">$850</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/Firense.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <h5 class="col" id="deals-card-title">Firenze</h5>
+                          <p class="col" id="deals-card-star">4.5</p>
+                        </div>
+                        <div class="row">
+                          <p class="col" id="deals-card-location">Italy</p>
+                          <p class="col" id="deals-card-old-price">$850</p>
+                          <p class="col" id="deals-card-new-price">$750</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/Paris.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <h5 class="col" id="deals-card-title">Paris</h5>
+                          <p class="col" id="deals-card-star">4.4</p>
+                        </div>
+                        <div class="row">
+                          <p class="col" id="deals-card-location">France</p>
+                          <p class="col" id="deals-card-old-price">$699</p>
+                          <p class="col" id="deals-card-new-price">$599</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/London.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <h5 class="col" id="deals-card-title">London</h5>
+                          <p class="col" id="deals-card-star">4.8</p>
+                        </div>
+                        <div class="row">
+                          <p class="col" id="deals-card-location">UK</p>
+                          <p class="col" id="deals-card-old-price">$850</p>
+                          <p class="col" id="deals-card-new-price">$850</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- OTRO CARROUSEL CARD  -->
+              <div class="carousel-item">
+                <div class="card-group" style="gap: 1%">
+                  <div class="card">
+                    <img
+                      src="recursos/Madrid.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <h5 class="col" id="deals-card-title">Madrid</h5>
+                          <p class="col" id="deals-card-star">4.8</p>
+                        </div>
+                        <div class="row">
+                          <p class="col" id="deals-card-location">Spain</p>
+                          <p class="col" id="deals-card-old-price">$950</p>
+                          <p class="col" id="deals-card-new-price">$850</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/Firense.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <h5 class="col" id="deals-card-title">Firenze</h5>
+                          <p class="col" id="deals-card-star">4.5</p>
+                        </div>
+                        <div class="row">
+                          <p class="col" id="deals-card-location">Italy</p>
+                          <p class="col" id="deals-card-old-price">$850</p>
+                          <p class="col" id="deals-card-new-price">$750</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/Paris.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <h5 class="col" id="deals-card-title">Paris</h5>
+                          <p class="col" id="deals-card-star">4.4</p>
+                        </div>
+                        <div class="row">
+                          <p class="col" id="deals-card-location">France</p>
+                          <p class="col" id="deals-card-old-price">$699</p>
+                          <p class="col" id="deals-card-new-price">$599</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/London.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <h5 class="col" id="deals-card-title">London</h5>
+                          <p class="col" id="deals-card-star">4.8</p>
+                        </div>
+                        <div class="row">
+                          <p class="col" id="deals-card-location">UK</p>
+                          <p class="col" id="deals-card-old-price">$850</p>
+                          <p class="col" id="deals-card-new-price">$850</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="btn btn-floating mx-3"
+              type="button"
+              id="deals-card-control"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span class="arrow-left" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="btn btn-floating mx-3"
+              type="button"
+              id="deals-card-control"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span class="arrow-right" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- ***** Fin Deals ***** -->
+      <!-- ***** Vacation ***** -->
+      <section class="container justify-content-center text-center">
+        <!-- Titulo -->
+
+        <div class="row">
+          <h1 class="col" id="titulo">
+            Best <span class="color-naranja"> vacation plan</span>
+          </h1>
+        </div>
+        <!-- Cuerpo -->
+        <div class="row">
+          <p class="col">
+            Plan your perfect vacation with our travel agency. Choose <br />
+            hundreds of all-inclusive offers!
+          </p>
+        </div>
+
+        <!-- Carrousel -->
+        <div class="row">
+          <div
+            id="carouselExampleCaptions2"
+            class="carousel carousel-dark slide"
+            data-bs-ride="false"
+          >
+            <div
+              style="
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 2%;
+              "
+            >
+              <button
+                class="btn btn-floating mx-3"
+                type="button"
+                id="deals-card-control"
+                data-bs-target="#carouselExampleCaptions2"
+                data-bs-slide="prev"
+              >
+                <span class="arrow-left" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="btn btn-floating mx-3"
+                type="button"
+                id="deals-card-control"
+                data-bs-target="#carouselExampleCaptions2"
+                data-bs-slide="next"
+              >
+                <span class="arrow-right" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+              <div class="carousel-indicators" style="display: none">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions2"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+              </div>
+            </div>
+            <div class="carousel-inner" style="margin-bottom: 2%">
+              <div class="carousel-item active">
+                <div class="card-group" style="gap: 1%">
+                  <div class="card">
+                    <img
+                      src="recursos/rome.jpg"
+                      class="card-img-top"
+                      alt="..."
+                      style="height: 68%"
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <h5 class="col" id="deals-card-title">Rome,Italty</h5>
+                          <p class="col" id="vacation-card-star">$5.42K</p>
+                        </div>
+                        <div class="row">
+                          <p class="col" id="vacation-card-location">
+                            10 Days Trip
+                          </p>
+                          <p class="col" id="deals-card-star">4.8</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/london2.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <h5 class="col" id="deals-card-title">London,UK</h5>
+                          <p class="col" id="vacation-card-star">$2.42K</p>
+                        </div>
+                        <div class="row">
+                          <p class="col" id="vacation-card-location">
+                            07 Days Trip
+                          </p>
+                          <p class="col" id="deals-card-star">4.7</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/osaka.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <h5 class="col" id="deals-card-title">Osaka,Japan</h5>
+                          <p class="col" id="vacation-card-star">$5.42K</p>
+                        </div>
+                        <div class="row">
+                          <p class="col" id="vacation-card-location">
+                            10 Days Trip
+                          </p>
+                          <p class="col" id="deals-card-star">4.8</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- OTRO CARROUSEL CARD  -->
+              <div class="carousel-item">
+                <div class="card-group" style="gap: 1%">
+                  <div class="card">
+                    <img
+                      src="recursos/rome.jpg"
+                      class="card-img-top"
+                      alt="..."
+                      style="height: 68%"
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <h5 class="col" id="deals-card-title">Rome,Italty</h5>
+                          <p class="col" id="vacation-card-star">$5.42K</p>
+                        </div>
+                        <div class="row">
+                          <p class="col" id="vacation-card-location">
+                            10 Days Trip
+                          </p>
+                          <p class="col" id="deals-card-star">4.8</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/london2.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <h5 class="col" id="deals-card-title">London,UK</h5>
+                          <p class="col" id="vacation-card-star">$2.42K</p>
+                        </div>
+                        <div class="row">
+                          <p class="col" id="vacation-card-location">
+                            07 Days Trip
+                          </p>
+                          <p class="col" id="deals-card-star">4.7</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/osaka.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <h5 class="col" id="deals-card-title">Osaka,Japan</h5>
+                          <p class="col" id="vacation-card-star">$5.42K</p>
+                        </div>
+                        <div class="row">
+                          <p class="col" id="vacation-card-location">
+                            10 Days Trip
+                          </p>
+                          <p class="col" id="deals-card-star">4.8</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ***** Fin Vacation ***** -->
+      <!-- ***** Abouts us ***** -->
+      <section class="container">
+        <div class="row">
+          <!-- TITULO -->
+          <div class="col">
+            <h1 class="titulo">
+              What people say <span class="color-naranja"> about Us. </span>
+            </h1>
+            <p>
+              Our Clients send us bunch of smilies with our services and we love
+              them.
+            </p>
+          </div>
+          <!-- CARROUSEL -->
+          <div class="col"></div>
+        </div>
+      </section>
+      <!-- ***** Fin Abouts us ***** -->
+      <!-- ***** Get update ***** -->
+      <section class="container justify-content-center text-center">
+        <!-- Titulo -->
+        <h1 class="row titulo">Get update with latest blog</h1>
+        <!-- Card -->
+        <div class="row">
+          <div
+            id="carouselExampleCaptions3"
+            class="carousel carousel-dark slide"
+            data-bs-ride="false"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions3"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions3"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+            </div>
+            <div class="carousel-inner" style="margin-bottom: 2%">
+              <div class="carousel-item active">
+                <div class="card-group" style="gap: 1%">
+                  <div class="card">
+                    <img
+                      src="recursos/amazing-diference-year.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="col get-update-card-title">
+                            The Amazing Difference a Year of Travelling .
+                          </p>
+                        </div>
+                        <div class="row">
+                          <p class="col get-update-card-body">July 27, 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/travel-for-enough.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="col get-update-card-title">
+                            Travel far enough, you meet yourself.
+                          </p>
+                        </div>
+                        <div class="row">
+                          <p class="col get-update-card-body">July 27, 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/save-money-while.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="col get-update-card-title">
+                            How to Save Money While Visiting Africa .
+                          </p>
+                        </div>
+                        <div class="row">
+                          <p class="col get-update-card-body">July 27, 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/reflection-5-months.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="col get-update-card-title">
+                            Reflections on 5 Months of Travel: Time to Hang
+                          </p>
+                        </div>
+                        <div class="row">
+                          <p class="col get-update-card-body">July 27, 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- OTRO CARROUSEL CARD  -->
+              <div class="carousel-item active">
+                <div class="card-group" style="gap: 1%">
+                  <div class="card">
+                    <img
+                      src="recursos/amazing-diference-year.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="col get-update-card-title">
+                            The Amazing Difference a Year of Travelling .
+                          </p>
+                        </div>
+                        <div class="row">
+                          <p class="col get-update-card-body">July 27, 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/travel-for-enough.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="col get-update-card-title">
+                            Travel far enough, you meet yourself.
+                          </p>
+                        </div>
+                        <div class="row">
+                          <p class="col get-update-card-body">July 27, 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/save-money-while.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="col get-update-card-title">
+                            How to Save Money While Visiting Africa .
+                          </p>
+                        </div>
+                        <div class="row">
+                          <p class="col get-update-card-body">July 27, 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/reflection-5-months.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="col get-update-card-title">
+                            Reflections on 5 Months of Travel: Time to Hang
+                          </p>
+                        </div>
+                        <div class="row">
+                          <p class="col get-update-card-body">July 27, 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- OTRO CARROUSEL CARD  -->
+              <div class="carousel-item active">
+                <div class="card-group" style="gap: 1%">
+                  <div class="card">
+                    <img
+                      src="recursos/amazing-diference-year.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="col get-update-card-title">
+                            The Amazing Difference a Year of Travelling .
+                          </p>
+                        </div>
+                        <div class="row">
+                          <p class="col get-update-card-body">July 27, 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/travel-for-enough.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="col get-update-card-title">
+                            Travel far enough, you meet yourself.
+                          </p>
+                        </div>
+                        <div class="row">
+                          <p class="col get-update-card-body">July 27, 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/save-money-while.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="col get-update-card-title">
+                            How to Save Money While Visiting Africa .
+                          </p>
+                        </div>
+                        <div class="row">
+                          <p class="col get-update-card-body">July 27, 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="recursos/reflection-5-months.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="col get-update-card-title">
+                            Reflections on 5 Months of Travel: Time to Hang
+                          </p>
+                        </div>
+                        <div class="row">
+                          <p class="col get-update-card-body">July 27, 2021</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ***** Fin Get update ***** -->
     </main>
     <footer></footer>
 

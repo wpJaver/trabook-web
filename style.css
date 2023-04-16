@@ -60,3 +60,138 @@ body {
 }
 
 /* ***** Fin Banner principal ***** */
+/* ***** Things you need *****  */
+
+.things {
+  background: #f7f8fc;
+  gap: 120rem;
+}
+
+#things-items {
+  /* gap: 120px auto; */
+}
+
+.titulo,
+#titulo {
+  font-family: "Volkhov";
+  font-weight: 700;
+  font-size: 48px;
+
+  color: #222222;
+}
+
+#things-card {
+  border: none;
+}
+
+#things-card-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #222222;
+}
+
+/* ***** Fin Things you need *****  */
+/* ***** Deals ***** */
+
+#deals-card-title {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 24px;
+  color: #222222;
+}
+
+#deals-card-star {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  color: #666666;
+}
+#deals-card-star::before {
+  margin-right: 10%;
+  content: url("recursos/star.png");
+}
+#deals-card-location {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  color: #666666;
+}
+#deals-card-location::before {
+  content: url("recursos/location.png");
+}
+
+#deals-card-old-price {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  color: #999999;
+  text-decoration: line-through;
+}
+
+#deals-card-new-price {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fa7436;
+  background: #ffe7db;
+  border-radius: 8px;
+}
+
+#deals-card-control {
+  border: 1px solid rgba(153, 153, 153, 0.5);
+  border-radius: 50%;
+}
+#deals-card-control:hover {
+  background: #fa7436;
+}
+/* ***** Fin Deals ***** */
+/* carousel-control-prev-icon */
+.arrow-left {
+  content: url("recursos/Arrow-left.png");
+}
+.arrow-left:hover {
+  content: url("recursos/Arrow-left-h.png");
+}
+.arrow-right {
+  content: url("recursos/Arrow-right.png");
+}
+.arrow-right:hover {
+  content: url("recursos/Arrow-right-h.png");
+}
+
+/* ***** Vacation ***** */
+#vacation-card-star {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 24px;
+  color: #fa7436;
+}
+#vacation-card-location {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  color: #666666;
+}
+#vacation-card-location::before {
+  content: url("recursos/Navigation.png");
+}
+/* ***** Fin Vacation ***** */
+/* ***** Abouts us ***** */
+/* ***** Fin Abouts us ***** */
+/* ***** Get update ***** */
+.get-update-card-title {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 18px;
+  color: #222222;
+}
+.get-update-card-body {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  color: #999999;
+}
+/* ***** Fin Get update ***** */
